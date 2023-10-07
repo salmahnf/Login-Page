@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <i class="fa fa-user" aria-hidden="true"></i> <br />
+      <br />
+      <h2>Login</h2>
+      <br />
+      <form action="success.html" method="get">
+        <div class="form-group">
+          <input
+            type="text"
+            id="login-input"
+            name="login-input"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div class="form-group password-container">
+          <input
+            type="password"
+            id="password-input"
+            name="password-input"
+            placeholder="Enter your password"
+            required
+          />
+          <span class="show-password" id="show-password">
+            <img
+              src="tutup.png"
+              alt="Show Password"
+              class="eye-icon"
+              id="show-password-icon"
+            />
+          </span>
+        </div>
+        <br />
+        <p>
+          Password must have at least 8 characters <br />
+          <br />
+          <a href="reset.html">Forgot your password?</a>
+        </p>
+
+        <button type="submit">Log in</button>
+      </form>
+
+      <br />
+
+      <div class="new-account">
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </div>
+
+    <footer>&copy; Tugas ITC salma hanifa / 123220019</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
